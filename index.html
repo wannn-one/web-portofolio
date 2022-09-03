@@ -6,20 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio | Ikhwanul Abiyu Dhiyya'ul Haq</title>
     <link href="./src/style/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </head>
     <body>
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-            <ul class="menu__box">
-                <li><a class="menu__item" href="#">Home</a></li>
-                <li><a class="menu__item" href="#">Projects</a></li>
-                <li><a class="menu__item" href="#">See my CV!</a></li>
-            </ul>
-        </div>
-        <div class="banner">
+        <nav>
+            <div class="logo">
+              <i class="bx bx-menu menu-icon"></i>
+              <span class="logo-name">OneCode</span>
+            </div>
+            <div class="sidebar">
+              <div class="logo">
+                <i class="bx bx-menu menu-icon"></i>
+                <span class="logo-name">OneCode</span>
+              </div>
+              <div class="sidebar-content">
+
+                <ul class="lists">
+                  <li class="list">
+                    <a href="./index.html#home" class="nav-link">
+                      <i class="bx bx-home-alt icon"></i>
+                      <span class="link">Home</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="./index.html#projects" class="nav-link">
+                      <i class="bx bx-folder-open icon"></i>
+                      <span class="link">My Projects</span>
+                    </a>
+                  </li>
+                  <li class="list">
+                    <a href="#" class="nav-link">
+                        <i class='bx bx-pie-chart-alt-2 icon'></i>
+                      <span class="link">See my CV!</span>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </nav>
+      
+        <section class="overlay"></section>
+        <div id="home" class="banner">
             <img src="src/images/Foto Wan.png" alt="Ikhwanul Abiyu" class="photo">
             <h1>
                 Hello guys! <span class="handEmoji"> 👋🏻 </span>
@@ -31,6 +60,32 @@
             </h2>
         </div>
         <button type="submit" id="projectButton">Click here to see my project</button>
+
+        <div class="icons">
+          <i class='bx bxl-html5 bx-lg bx-tada-hover' style='color:#ffffff'></i>
+          <i class='bx bxl-css3 bx-lg bx-tada-hover' style='color:#ffffff' ></i>
+          <i class='bx bxl-javascript bx-lg bx-tada-hover' style='color:#ffffff' ></i>
+          <i class='bx bxl-c-plus-plus bx-lg bx-tada-hover' style='color:#ffffff' ></i>
+          <button class="scmdBtn" type="submit" id="github"><i class='bx bxl-github bx-lg bx-tada-hover'></i></button>
+          <button class="scmdBtn" type="submit" id="insta"><i class='bx bxl-instagram bx-lg bx-tada-hover' style='color:#ffffff' ></i></button> 
+        </div>        
+
+        <h1 class="mypro">My Projects</h1>
+
+        <div id="projects" class="row">
+          <div class="column">
+              cek
+          </div>
+          <div class="column">
+              cek
+          </div>
+          <div class="column">
+              
+          </div>
+          <div class="column">
+              
+          </div>
+      </div>
     </body>
     <script src="src/script/script.js"></script>
 </html>
